@@ -11,28 +11,44 @@ closeIcon.addEventListener("click", () => {
   showPopup.classList.add("hidden");
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const latestButton = document.querySelector("#latest");
   if (latestButton) {
     latestButton.addEventListener("click", function () {
       const sections = document.querySelectorAll("section.hidden");
-      const firstSection = sections[0];
+      if (sections.length > 0) {
+        const firstSection = sections[0];
 
-      if (firstSection) {
-        firstSection.style.display = "block";
+        // Remove "hidden" from all sections first
+        sections.forEach((section) => {
+          section.classList.remove("hidden");
+        });
+
+        // Scroll to the first section
         setTimeout(() => {
-          firstSection.classList.remove("hidden");
-
           firstSection.scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
-        }, 10);
+        }, 50);
+      } else {
+        console.error("No hidden sections found.");
       }
-      sections.forEach((section) => {
-        section.classList.remove("hidden");
-      });
     });
   }
 });
+
+
+
+
+document.querySelector('.logo').addEventListener('click', () => {
+  const sections = document.querySelectorAll('section'); // Select all <section> elements
+  if (sections.length > 0) {
+    sections[0].scrollIntoView({ behavior: 'smooth' }); // Scroll to the first section smoothly
+  } else {
+    console.error('No sections found on the page.');
+  }
+});
+
 

@@ -216,38 +216,3 @@
   }
 }
 
-/* .title::after,
-.title::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: conic-gradient(from var(--angle), #006aff);
-  z-index: -1;
-  padding: 5px 4px;
-  animation: spin 3s linear infinite;
-  border-radius: 8px;
-}
-
-.title::before {
-  filter: blur(1.35rem);
-  opacity: 0.5;
-}
-
-@property --angles {
-  syntax: "<angles>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes spin {
-  from {
-    --angles: 0deg;
-  }
-  to {
-    --angles: 360deg;
-  }
-} */
