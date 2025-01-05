@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romeesa Kamal</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="background.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        background: linear-gradient(45deg, #ff4545, #00ff99, #006aff, #ff0095);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .swiper-pagination-bullet {
+        background: linear-gradient(45deg, #ff4545, #00ff99, #006aff, #ff0095);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#1c1d25] text-white font-['Nunito'] overflow-y-scroll scrollbar"
+  >
+  <!-- First Section -->
+    <section class="flex flex-col justify-between h-screen">
+      <header
+        class="flex items-center justify-between w-full px-4 mt-4 max-w-screen-2xl mx-auto relative"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="my-svg"
+          width="70"
+          height="77"
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="#FFF"
+            d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"
+          ></path>
+          <g fill="currentColor">
+            <path
+              d="M145.3 145.1l36-31.6s.8-.7 1.1-1l2.4-2.4c8.5-10.3 13.3-23.3 13.3-36.7 0-31.8-25.8-57.7-57.6-57.7l-111.1.1L7.2 38.6l111.4-.1h21.9c19.2 0 34.8 15.6 34.8 34.8 0 8.2-2.7 15.8-8 22.2-1 1.3-8.3 7.3-8.3 7.3l-12.4 10.6-35.6 31.7 102.9 90h34.3l-102.9-90zm33.4-31.7h.2-.2z"
+            ></path>
+            <path
+              d="M252.8 236.9h-39.6l-.5-.4-104.4-91.3 37.1-33 12.5-10.6c3.5-2.9 7.5-6.3 8.1-7 5-6 7.6-13.3 7.6-21.1 0-18.2-14.8-33.1-33.1-33.1H3L28.6 14h115.8l-.1.1c31 2 55.6 27.8 55.6 59.3 0 13.6-4.9 27.1-13.7 37.8-.5.6-2.2 2.3-2.6 2.6-.3.3-1.2 1-1.2 1l-.5.4-34 29.8 104.9 91.9zm-38.3-3.5h29l-100.9-88.3 34.1-29.9h-2.2l3.6-3.5h1v1.5l1.6-1.4c.2-.2.4-.4.6-.5.4-.3 1.9-1.9 2.2-2.2 8.3-10.1 12.9-22.8 12.9-35.6 0-30.8-25.1-55.9-55.9-55.9h-3.9l-106.5-.1-18.8 19.4 109-.1h20.1c20.2 0 36.6 16.4 36.6 36.6 0 8.6-2.9 16.6-8.4 23.3-1 1.3-7.3 6.5-8.5 7.5l-12.4 10.6-34.1 30.3 100.9 88.3z"
+            ></path>
+            <g>
+              <path
+                d="M249.3 235.5h-35.5l-.1-.1-103.2-90.3.3-.3 35.6-31.7 12.4-10.6c2.5-2.1 7.5-6.2 8.3-7.2 5.1-6.2 7.9-13.8 7.9-21.9 0-19-15.4-34.4-34.4-34.4H6.2l23-23.7h.2l112.1-.1c31.6.5 57.1 26.4 57.1 58.1 0 13.3-4.8 26.5-13.4 37-.4.5-2.1 2.2-2.4 2.5-.3.3-1.1 1-1.1 1l-.1.1-35.5 31.2 103.2 90.4zm-35.3-.8h33l-102.4-89.6 36.4-32c.2-.2.7-.6 1-.9.3-.3 2-1.9 2.4-2.4 8.5-10.3 13.2-23.3 13.2-36.4 0-31.5-25.7-57.2-57.2-57.3h-1l-110 .1L8 38.2l111-.1h21.5c19.4 0 35.2 15.8 35.2 35.2 0 8.3-2.8 16-8 22.4-1 1.3-8.1 7.1-8.4 7.3l-12.4 10.6-35.2 31.4L214 234.7zm-35-120.9h-1.4l1-.8h.4V113.8z"
+              ></path>
+              <path
+                d="M253.9 237.3H213l-.5-.4-104.8-91.7 1.8-1.6 35.6-31.7 12.5-10.6c4-3.3 7.5-6.4 8-7 4.9-5.9 7.5-13.1 7.5-20.8 0-18-14.7-32.7-32.7-32.7H2l26.4-27.2 117.2-.1-.2.2c30.6 2.6 54.8 28.5 54.8 59.6 0 13.7-4.9 27.3-13.8 38.1-.5.6-2.3 2.4-2.6 2.7-.3.3-1.2 1-1.2 1l-.5.4-33.6 29.5 105.4 92.3zm-39.2-4.3h27.7L142 145.1l33.6-29.5h-3.1l4.7-3.8.1-2.6 1.8 2 1.4.1c.2-.1.3-.3.4-.4.4-.3 1.9-1.9 2.2-2.2 8.3-10 12.8-22.6 12.8-35.3 0-30.6-24.9-55.5-55.5-55.5H30.3l-18 18.5 108.4-.1h19.7c20.4 0 37 16.6 37 37 0 8.7-2.9 16.8-8.4 23.5-.7.9-3.5 3.4-8.5 7.5L148 115.1l-33.7 30L214.7 233z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <div class="flex gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-sun"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="hidden"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </div>
+      </header>
+      <div class="flex -mt-11 relative">
+        <div class="w-full max-w-screen-xl mx-auto">
+          <svg
+            id="logo-anim"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="256"
+            height="256"
+            viewBox="0 0 256 256"
+            class="absolute top-0 left-1/2 -translate-y-[80px] sm:-translate-y-[180px] -translate-x-1/2 md:w-[558px] h-auto sm:w-[400px] w-[300px] opacity-50"
+          >
+            <style>
+              .st0 {
+                clip-path: url(#XMLID_8_);
+                fill: none;
+                stroke: url(#XMLID_9_);
+                stroke-width: 70.344;
+                stroke-miterlimit: 10;
+              }
+              .st1 {
+                clip-path: url(#XMLID_11_);
+                fill: none;
+                stroke: url(#XMLID_12_);
+                stroke-width: 70.344;
+                stroke-miterlimit: 10;
+              }
+            </style>
+            <g id="XMLID_10_">
+              <defs>
+                <path
+                  id="XMLID_4_"
+                  d="M54.9 147.2l80-70h-33.5l-80 70L122 235.3h33.5L54.9 147.2z"
+                  style="stroke-dasharray: 548, 550; stroke-dashoffset: 0"
+                ></path>
+              </defs>
+              <clipPath id="XMLID_8_">
+                <use xlink:href="#XMLID_4_" overflow="visible"></use>
+              </clipPath>
+              <linearGradient
+                id="XMLID_9_"
+                gradientUnits="userSpaceOnUse"
+                x1="-169.589"
+                y1="333.156"
+                x2="21.795"
+                y2="333.156"
+                gradientTransform="matrix(1 0 0 -1 156 491)"
+              >
+                <stop offset="0" stop-color="#2D2E83"></stop>
+                <stop offset="1" stop-color="#1D71B8"></stop>
+              </linearGradient>
+              <path
+                id="XMLID_3_"
+                d="M154.6 249.8L37.8 147.2c8.3-8.3 91.4-81.4 91.4-81.4"
+                class="st0"
+                style="stroke-dasharray: 278, 280; stroke-dashoffset: 0"
+              ></path>
+            </g>
+            <g id="XMLID_6_">
+              <g id="XMLID_7_">
+                <defs>
+                  <path
+                    id="XMLID_2_"
+                    d="M251.1 237.4h-40l-.5-.4-102.5-89.7 1.8-1.6 34.8-31 12.2-10.4c3.9-3.2 7.4-6.2 7.8-6.8 4.8-5.8 7.3-12.8 7.3-20.4 0-17.6-14.3-31.9-31.9-31.9H4.8l25.8-26.6 114.6-.1-.2.2c29.9 2.5 53.6 27.9 53.6 58.3 0 13.4-4.8 26.7-13.5 37.2-.5.6-2.3 2.3-2.6 2.6-.3.3-1.1 1-1.1 1l-.5.4L148 147l103.1 90.4z"
+                    style="stroke-dasharray: 926, 928; stroke-dashoffset: 0"
+                  ></path>
+                </defs>
+                <clipPath id="XMLID_11_">
+                  <use xlink:href="#XMLID_2_" overflow="visible"></use>
+                </clipPath>
+                <linearGradient
+                  id="XMLID_12_"
+                  gradientUnits="userSpaceOnUse"
+                  x1="-156.508"
+                  y1="354.122"
+                  x2="115.621"
+                  y2="354.122"
+                  gradientTransform="matrix(1 0 0 -1 156 491)"
+                >
+                  <stop offset="0" stop-color="#2D2E83"></stop>
+                  <stop offset="1" stop-color="#1D71B8"></stop>
+                </linearGradient>
+                <path
+                  id="XMLID_1_"
+                  d="M-.5 29.8l126.8-.1c29.9 2.5 57.4 17 57.4 47.4 0 13.4-4.3 24.4-17.4 37.2-.5.6-2.3 2.3-2.6 2.6-.3.3-1.1 1-1.1 1l-.5.4-32.9 28.8 118.9 105.6"
+                  class="st1"
+                  style="stroke-dasharray: 461, 463; stroke-dashoffset: 0"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <div class="relative ml-8 md:ml-12">
+            <h1 class="text-4xl md:text-[64px] font-['Spartan'] mr-12">
+              Romeesa Kamal
+            </h1>
+            <p class="font-[Merriweather] italic my-4 md:my-12">
+              Building the Frontend, Dreaming Full-Stack
+            </p>
+            <button
+              class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#EE5A24] to-[#EA2027] relative hover:scale-110 ease-in-out duration-100 group z-10 overflow-visible tracking-widest"
+              id="about"
+            >
+              About Me
+              <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1"
+                x="0px"
+                y="0px"
+                width="44"
+                height="44"
+                viewBox="0 0 100 100"
+                class="absolute top-1/2 -translate-y-1/2 -right-[26px] group-hover:-right-8 ease-in-out duration-100"
+              >
+                <g transform="translate(0,-952.36218)">
+                  <path
+                    style="
+                      text-indent: 0;
+                      text-transform: none;
+                      direction: ltr;
+                      color: #000000;
+                      enable-background: accumulate;
+                    "
+                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                    fill="#fff"
+                    fill-opacity="1"
+                    stroke="white"
+                    stroke-width="2"
+                    marker="none"
+                    visibility="visible"
+                    display="inline"
+                    overflow="visible"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul
+          class="ml-auto space-y-6 text-[#b0b2c3] absolute md:right-8 right-5 overflow-hidden z-10"
+        >
+          <li>
+            <a
+              href="https://www.linkedin.com/in/romeesa-kamal-7864b8342/"
+              target="_blank"
+            >
+              <svg
+                class="w-8 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              <svg
+                class="w-8 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              <svg
+                class="w-8 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:https:kamalromeesa@gmail.com" target="_blank">
+              <svg
+                class="w-8 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/RomeesaKamal" target="_blank">
+              <svg
+                class="w-8 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="hidden"
+        id="popup"
+      >
+        <div class="fixed inset-0 flex z-[11111] items-center justify-center">
+          <div
+            class="grid xl:grid-cols-[55%_35%] h-[89%] xl:w-[65%] xl:h-[78%] w-[70% h-[80%]] md:w-[80%] md:h-[50%] grid-cols-1 bg-[#19191d] bg-opacity-[190%] transition-all rounded-xl relative shadow-[0_5px_15px-#0e0e11] overflow-auto scrollbar-custom"
+          >
+            <img
+              src="./assets/icons/x.svg"
+              alt="cross-icon"
+              class="absolute top-3 right-3 p-2 bg-[#25252b] rounded-full shadow-[0_0px_3px_4px_ #161619] hover:rotate-180 ease-in-out duration-100 z-[1234] overflow-visible"
+              id="close"
+            />
+            <div class="flex flex-col sm:pl-20 pl-3  pr-3 sm:pr-20 pt-5 mt-6">
+              <h2 class="font-['Spartan'] font-bold text-2xl text-[#257180]">
+                ABOUT ME
+              </h2>
+              <p class="mt-6 text-lg font-['Nunito']">
+                Hi there! I’m Rome 😊, an 18-year-old Pakistani with a passion
+                for weaving creativity into websites. Crafting unique and
+                captivating designs that draw users in is my true calling. As a
+                lifelong learner in development, I’m constantly evolving my
+                skills and pushing boundaries to carve my way to the top. For
+                me, every project is an opportunity to create something
+                extraordinary and leave a lasting impression.
+              </p>
+              <div>
+                <h3 class="text-xl uppercase my-4 text-[#219B9D]">
+                  My Educational Background
+                </h3>
+                <div>
+                  <h4 class="text-[24px]">
+                    🎓 Intermediate in Pre-Engineering
+                    <b class="text-[#557C56]">2024</b>
+                  </h4>
+                  <p
+                    class="font-[Merriweather] italic mt-2 text-[19px] text-[#FDA403]"
+                  >
+                    The Peace College, Swabi
+                  </p>
+                  <p class="text-lg font-['Nunito']">
+                    Achieved <b class="text-[#557C56]">89%</b>, demonstrating
+                    strong aptitude in Mathematics, Physics, and Chemistry.
+                  </p>
+                </div>
+                <h3 class="text-xl uppercase my-4 text-[#219B9D]">
+                  Hobbies & Interests
+                </h3>
+                <div class="p-1">
+                  <li class="text-lg font-['Nunito']">
+                    🎨
+                    <b class="text-[#557C56] italic"
+                      >Sketching & Nature Drawing</b
+                    >
+                    Capturing the beauty of the natural world through art.
+                  </li>
+
+                  <li class="text-lg font-['Nunito']">
+                    ✍️
+                    <b class="text-[#557C56] italic">Poetry Writing (Urdu) </b
+                    >Expressing emotions and creativity through the elegance of
+                    Urdu poetry.
+                  </li>
+
+                  <li class="text-lg font-['Nunito']">
+                    💻 Exploring
+                    <b class="text-[#557C56] italic">Technologies</b> Always
+                    curious to learn about new tech trends and innovations.
+                  </li>
+                </div>
+              </div>
+              <div>
+                <h2
+                  class="text-xl font-['Franklin'] uppercase text-[#219B9D] mt-4"
+                >
+                  Transforming Ideas into Stunning, Responsive Digital
+                  Experiences
+                </h2>
+                <li class="mt-5">
+                  🚀 Starting my Web Development Journey on
+                  <span class="text-[#557C56] italic">August 23, 2024</span>
+                  Since then, I have learned and worked with the following
+                  technologies.
+                </li>
+                <div class="tooltip-container">
+                  <div class="tooltip-icon html">
+                    <svg
+                      class="text-[#fff]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        fill="#47a248"
+                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"
+                      />
+                    </svg>
+                    <span>H</span>
+                    <div class="tooltip"><span>HTML5</span></div>
+                  </div>
+                  <div class="tooltip-icon css">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 384 512 "
+                      fill="#f3740b"
+                    >
+                      <path
+                        d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+                      />
+                    </svg>
+                    <span class="text-[#f3740b] font-bold">C</span>
+                    <div class="tooltip"><span>CSS</span></div>
+                  </div>
+                  <div class="tooltip-icon tailwind">
+                    <div class="tooltip"><span>Tailwind</span></div>
+                    <img
+                      src="./assets/images/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+                      alt="tailwind"
+                      class="relative z-10"
+                    />
+                    <span>T</span>
+                  </div>
+                  <div class="tooltip-icon react">
+                    <img
+                      src="./assets/images/react.svg"
+                      alt="react"
+                      class="relative z-10"
+                    />
+                    <span>R</span>
+                    <div class="tooltip"><span>React.js</span></div>
+                  </div>
+                  <div class="tooltip-icon java-scrpt">
+                    <img
+                      src="./assets/images/java-script.svg"
+                      alt="java-script"
+                      class="relative z-10"
+                    />
+                    <span class="text-[#FFC700]">J</span>
+                    <div class="tooltip"><span>javaScript</span></div>
+                  </div>
+                  <div class="tooltip-icon bootstrap">
+                    <svg
+                      width="55"
+                      height="55"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      fill="#401F71"
+                      class="text-[#fff] relative z-10"
+                    >
+                      <path
+                        d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z"
+                      />
+                    </svg>
+                    <span class="text-[#401F71]">B</span>
+                    <div class="tooltip"><span>Bootstrap</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:flex sm:justify-center sm:pl-10 2xl:mt-56">
+              <img
+                src="./assets/images/rome.svg"
+                alt="picture"
+                class="sm:w-[500px] sm:h-[500px] w-[330px] h-[330px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
+      >
+        <button
+          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#EE5A24] to-[#EA2027] relative hover:scale-110 ease-in-out duration-100 group mb-20 z-10  tracking-widest"
+        id="latest">
+          Latest Works
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            width="44"
+            height="44"
+            viewBox="0 0 100 100"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+          >
+            <g transform="translate(0,-952.36218)">
+              <path
+                style="
+                  text-indent: 0;
+                  text-transform: none;
+                  direction: ltr;
+                  color: #000000;
+                  enable-background: accumulate;
+                "
+                d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                fill="#fff"
+                fill-opacity="1"
+                stroke="white"
+                stroke-width="2"
+                marker="none"
+                visibility="visible"
+                display="inline"
+                overflow="visible"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="absolute w-full h-screen overflow-hidden">
+        <div class="bubbles absolute flex">
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 24"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 23"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 22"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 26"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 28"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 24"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 23"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 22"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 26"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 28"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 23"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 22"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 29"></span>
+          <span style="--i: 30"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 8"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 18"></span>
+        </div>
+      </div>
+    </section>
+ <!-- Latest Works -->
+    <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16 hidden pt-[2px]">
+      <h2
+        class="text-3xl sm:text-[40px] relative z-20 bg-[#1c1d25] mt-8 font-bold px-4 py-3 w-max mx-auto text-center text-[#5892bb] rounded-lg drop-shadow-[0_0px_10px_rgba(59,130,246,0.3)]"
+      >
+        Latest Works
+      </h2>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded hover:border-4 border-indigo-200 border-t-indigo-500 duration-100 relative"
+      >
+        <div
+          class="h-1 left-1/4 right-1/2 bg-[#fc815c] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+
+        <a
+          href="https://romeesakamal.github.io/REST-Countries-API/"
+          class="flex w-full relative"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
+          >
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#fc815c] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >Explore World Data
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            <img
+              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              src="./assets/images/countries.png"
+              alt="countries-app"
+            />
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#fc815c] font-bold text-4xl">Explore World Data</h3>
+          <span class="text-[#fc815c] text-lg"
+            >(REST Countries API Integration)</span
+          >
+          <p class="text-justify mt-2 text-xl">
+            A frontend project where I used the REST Countries API to show
+            country details. It shows my ability to work with APIs and display
+            data dynamically.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 sm:mt-6 mt-4">
+            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+              JavaScript
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+              REST  API
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded hover:border-4 border-indigo-200 border-x-indigo-500 duration-100 relative"
+      >
+        <div class="w-full">
+          <h3 class="text-[#ffe578] font-bold text-4xl">Recipe Explorer</h3>
+          <span class="text-[#ffe578] text-lg">(Find Your Next Dish)</span>
+          <p class="text-justify mt-2 text-xl">
+            This is my second API project, assigned by my mentor. I added
+            creative features to make the website more enjoyable and
+            user-friendly.
+          </p>
+          <ul class="flex flex-wrap gap-2 mt-4">
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              JavaScript
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              Figma
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              Canva
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+              API Integration
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-1 left-1/2 right-1/4 bg-[#ffe578] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+        <a
+          href="https://romeesakamal.github.io/Recipe-website/"
+          class="w-full sm:ml-auto"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
+          >
+            <img
+              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              src="./assets/images/recipe.png"
+              alt="recipe-website"
+            />
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#ffe578] text-black sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >Recipe Explorer
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-2 rounded hover:border-4 border-indigo-200 border-b-indigo-500 duration-100 relative"
+      >
+        <div
+          class="h-1 left-1/4 right-1/2 bg-[#FF5553] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#FF5553] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+
+        <a
+          href="https://romeesakamal.github.io/to-do-app/"
+          class="w-full sm:ml-auto"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
+          >
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#FF5553] sm:absolute left-1/2 sm:-translate-x-2/3 top-5 px-4 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >Task-Trax-App
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            <img
+              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              src="./assets/images/to-do.png"
+              alt="to-do-app"
+            />
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#FF5553] font-bold text-4xl">Task Trax</h3>
+          <span class="text-[#FF5553] text-lg">(Stay on Track Every Day)</span>
+          <p class="text-justify mt-2 text-xl">
+            I created a to-do app called Task Trax to simplify task management.
+            It includes features like adding, editing, and deleting tasks, with
+            real-time updates and a user-friendly design. This project showcases
+            my skills in building functional, responsive, and intuitive
+            applications.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-6">
+            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+              JavaScript
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center  shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded hover:border-4 border-indigo-200 border-l-indigo-500 duration-100 relative"
+      >
+        <div class="w-full">
+          <h3 class="text-[#47AFA1] font-bold text-4xl">Mortgage Calculator</h3>
+          <span class="text-[#47AFA1] text-lg"
+            >(Accurate Loan Payment Estimator)</span
+          >
+          <p class="text-justify mt-2 text-xl">
+            This is a Frontend Mentor challenge that I completed, where I
+            learned new skills and improved my understanding of front-end
+            development through building a functional mortgage calculator.
+          </p>
+          <ul class="flex flex-wrap gap-2 mt-4">
+            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+              JavaScript
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-1 left-1/2 right-1/4 bg-[#47AFA1] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#47AFA1] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+        <a
+          href="https://romeesakamal.github.io/mortgage-repayment-calculator/"
+          class="w-full sm:ml-auto"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
+          >
+            <img
+              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              src="./assets/images/mortgage.png"
+              alt="mortgage calculator"
+            />
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#47AFA1] text-black sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >Mortgage Calculator
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded hover:border-4 border-indigo-200 border-y-indigo-500 duration-100 relative"
+      >
+        <div
+          class="h-1 left-1/4 right-1/2 bg-[#E4B1F0] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#E4B1F0] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+
+        <a
+          href="https://romeesakamal.github.io/Rock-paper-scissors-game/"
+          class="w-full sm:ml-auto"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
+          >
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#E4B1F0] sm:absolute left-[55%] sm:-translate-x-2/3 top-5 px-3 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 text-black"
+              >Rocked, Scissored, and Papered
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            <img
+              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              src="./assets/images/rock-game.png"
+              alt="rock-game"
+            />
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#E4B1F0] font-bold text-4xl">
+            Rocked, Scissored, and Papered
+          </h3>
+          <span class="text-[#E4B1F0] text-lg"
+            >(Classic Hand Game with Logic)</span
+          >
+          <p class="text-justify mt-2 text-xl">
+            This is also a Frontend Mentor challenge where I built a
+            Rock-Paper-Scissors game. It features an interactive UI, responsive
+            design, and game logic for user vs. computer gameplay. This project
+            enhanced my skills in JavaScript and front-end development.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-6">
+            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+              JavaScript
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-3 mt-10 rounded hover:border-4 border-indigo-200 border-x-indigo-500 duration-100 relative"
+      >
+        <div class="w-full">
+          <h3 class="text-[#3E7B27] font-bold text-4xl">SecurePass Creator</h3>
+          <span class="text-[#3E7B27] text-lg"
+            >(Generate Strong and Secure Passwords)</span
+          >
+          <p class="text-justify mt-2 text-xl">
+            I built a password generator that creates strong, secure passwords
+            based on user-selected criteria. The tool allows customization for
+            length and character types, ensuring maximum security. This project
+            helped me sharpen my JavaScript skills and focus on functionality
+            and user experience.
+          </p>
+          <ul class="flex flex-wrap gap-2 mt-4">
+            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+              HTML
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+              CSS
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+              JavaScript
+            </li>
+            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+              Figma
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="h-1 left-1/2 right-1/4 bg-[#3E7B27] absolute top-1/2 hidden md:block"
+        ></div>
+        <div
+          class="w-5 h-5 rounded-full border-[3px] border-[#3E7B27] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+        ></div>
+        <a
+          href="https://romeesakamal.github.io/Password-Generator-/"
+          class="w-full sm:ml-auto"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
+          >
+            <img
+              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              src="./assets/images/passward.png"
+              alt="passward-generator"
+            />
+            <span
+              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#3E7B27] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >SecurePass Creator
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="absolute top-[36px] bottom-0 left-1/2 -translate-x-1/2 w-[4px] bg-[#1788ae] md:block hidden"
+      ></div>
+    </section>
+    <!-- About Cards -->
+    <section class="max-w-screen-xl mx-auto px-4 pb-14 hidden">
+      <h2
+        class="text-2xl sm:text-3xl bg-[#1c1d25] sm:w-max relative font-bold px-4 py-2 mx-auto text-center text-[#FF6500] rounded-md card"
+      >
+        Let’s Build Something Great Together
+      </h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper !py-14 -mx-4">
+        <div class="swiper-wrapper items-center">
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/dedication.webp"
+                alt="dedication"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#F8D71A] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Dedication to Excellence
+                </h2>
+                <p>
+                  I’m committed to delivering high-quality results that meet
+                  your needs and exceed your expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/personalize.webp"
+                alt="personalize"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#A0153E] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Personalized Solutions
+                </h2>
+                <p>
+                  Every project is unique, and I tailor my approach to bring
+                  your specific vision to life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/collobrative.png"
+                alt="personalize"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#FF6500] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Collaborative Spirit
+                </h2>
+                <p>
+                  I value your input and believe in working together to create
+                  something truly exceptional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/attention.webp"
+                alt="attention"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#C62300] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Attention to Detail
+                </h2>
+                <p>
+                  I focus on every little detail to ensure the final product is
+                  polished and professional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/communication.webp"
+                alt="communication"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#ED8D8D] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Transparent Communication
+                </h2>
+                <p>
+                  Clear and open communication is at the heart of how I work,
+                  ensuring you're always in the loop.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/learning.png"
+                alt="learning"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#DA0037] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Continuous Learning
+                </h2>
+                <p>
+                  I stay updated with the latest tools and trends to provide
+                  innovative and efficient solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/creativity.jpeg"
+                alt="Creativity"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#D89216] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Passion for Creativity
+                </h2>
+                <p>
+                  I bring enthusiasm and creativity to every project, ensuring
+                  it stands out.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/solving.jpeg"
+                alt="Problem-Solving"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#FF1E56] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Problem-Solving Mindset
+                </h2>
+                <p>
+                  I approach challenges with a proactive attitude, finding
+                  effective solutions to ensure project success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/flexabilty.jpg"
+                alt="flexabilty"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#4ECCA3] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Adaptability and Flexibility
+                </h2>
+                <p>
+                  I’m ready to adapt to your changing needs, ensuring smooth
+                  collaboration and optimal results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative px-5">
+            <div
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-12 mb-3 mt-3 shadow-2xl rounded-lg card relative"
+            >
+              <img
+                src="./assets/images/time.webp"
+                alt="time"
+                class="shrink-0 w-[120px] h-[120px] rounded-full"
+                style="
+                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
+                    0 0 50px #006bff;
+                "
+              />
+              <div class="ml-8 text-left">
+                <h2
+                  class="text-[#C6DE41] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                >
+                  Timely Delivery
+                </h2>
+                <p>
+                  I prioritize meeting deadlines without compromising on
+                  quality, so your project stays on track.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+<!-- Contact Form -->
+    <section class="max-w-screen-xl mx-auto px-4 pb-14 hidden">
+      <h2
+        class="text-2xl sm:text-3xl bg-[#1c1d25] sm:w-max relative font-bold px-4 py-2  mx-auto text-center text-[#FF6500]   rounded-md card"
+      >
+        Excited to explore opportunities together.
+      </h2>
+      <div class="flex flex-col md:flex-row items-center mt-10">
+        <div class="w-full">
+        <img class="w-[500px]" src="./assets/images/lets-connect.svg" alt="lets-connect" />
+      </div>
+        <form class="w-full" name='contact' netlify>
+          <label
+          type="text"
+          id="name"
+            for="name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Name</label
+          >
+          <div class="relative mb-4">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+            >
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+            </svg>
+            </div>
+            <input
+              type="text"
+              id="email-address-icon"
+              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+              placeholder="Enter your name"
+            />
+          </div>
+          <label
+            for="email-address-icon"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your Email</label
+          >
+          <div class="relative mb-4">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+              placeholder="name@romeesakamal2005.com"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+            <textarea id="message" rows="8" class="block p-2.5 w-full text-sm outline-none text-gray-900 bg-gray-50 rounded-lg border-2 border-gray-3 focus:ring-[#1788ae] focus:border-[#1788ae] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Leave a your message..."></textarea>
+          </form>
+        <button type="submit"
+        class="flex text-center gap-5 justify-center w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 my-8 focus:outline-none"
+         ><span><svg xmlns="http://www.w3.org/2000/svg"width='18' height="18" fill="currentColor" viewBox="0 0 512 512"><path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg></span>Send Message</button>
+
+          </div>
+          
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+     <section class=" hidden">
+    <footer class="flex flex-col items-center pb-10">
+      <p class="text-xs text-gray-300">Romeesa Kamal © 2025</p>
+      <div class="black-logo my-4">
+       
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="my-svg"
+        width="50"
+        height="50"
+        class ="logo"
+        viewBox="0 0 256 256"
+      >
+        <path
+          fill="#FFF"
+          d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"
+        ></path>
+        <g fill="currentColor">
+          <path
+            d="M145.3 145.1l36-31.6s.8-.7 1.1-1l2.4-2.4c8.5-10.3 13.3-23.3 13.3-36.7 0-31.8-25.8-57.7-57.6-57.7l-111.1.1L7.2 38.6l111.4-.1h21.9c19.2 0 34.8 15.6 34.8 34.8 0 8.2-2.7 15.8-8 22.2-1 1.3-8.3 7.3-8.3 7.3l-12.4 10.6-35.6 31.7 102.9 90h34.3l-102.9-90zm33.4-31.7h.2-.2z"
+          ></path>
+          <path
+            d="M252.8 236.9h-39.6l-.5-.4-104.4-91.3 37.1-33 12.5-10.6c3.5-2.9 7.5-6.3 8.1-7 5-6 7.6-13.3 7.6-21.1 0-18.2-14.8-33.1-33.1-33.1H3L28.6 14h115.8l-.1.1c31 2 55.6 27.8 55.6 59.3 0 13.6-4.9 27.1-13.7 37.8-.5.6-2.2 2.3-2.6 2.6-.3.3-1.2 1-1.2 1l-.5.4-34 29.8 104.9 91.9zm-38.3-3.5h29l-100.9-88.3 34.1-29.9h-2.2l3.6-3.5h1v1.5l1.6-1.4c.2-.2.4-.4.6-.5.4-.3 1.9-1.9 2.2-2.2 8.3-10.1 12.9-22.8 12.9-35.6 0-30.8-25.1-55.9-55.9-55.9h-3.9l-106.5-.1-18.8 19.4 109-.1h20.1c20.2 0 36.6 16.4 36.6 36.6 0 8.6-2.9 16.6-8.4 23.3-1 1.3-7.3 6.5-8.5 7.5l-12.4 10.6-34.1 30.3 100.9 88.3z"
+          ></path>
+          <g>
+            <path
+              d="M249.3 235.5h-35.5l-.1-.1-103.2-90.3.3-.3 35.6-31.7 12.4-10.6c2.5-2.1 7.5-6.2 8.3-7.2 5.1-6.2 7.9-13.8 7.9-21.9 0-19-15.4-34.4-34.4-34.4H6.2l23-23.7h.2l112.1-.1c31.6.5 57.1 26.4 57.1 58.1 0 13.3-4.8 26.5-13.4 37-.4.5-2.1 2.2-2.4 2.5-.3.3-1.1 1-1.1 1l-.1.1-35.5 31.2 103.2 90.4zm-35.3-.8h33l-102.4-89.6 36.4-32c.2-.2.7-.6 1-.9.3-.3 2-1.9 2.4-2.4 8.5-10.3 13.2-23.3 13.2-36.4 0-31.5-25.7-57.2-57.2-57.3h-1l-110 .1L8 38.2l111-.1h21.5c19.4 0 35.2 15.8 35.2 35.2 0 8.3-2.8 16-8 22.4-1 1.3-8.1 7.1-8.4 7.3l-12.4 10.6-35.2 31.4L214 234.7zm-35-120.9h-1.4l1-.8h.4V113.8z"
+            ></path>
+            <path
+              d="M253.9 237.3H213l-.5-.4-104.8-91.7 1.8-1.6 35.6-31.7 12.5-10.6c4-3.3 7.5-6.4 8-7 4.9-5.9 7.5-13.1 7.5-20.8 0-18-14.7-32.7-32.7-32.7H2l26.4-27.2 117.2-.1-.2.2c30.6 2.6 54.8 28.5 54.8 59.6 0 13.7-4.9 27.3-13.8 38.1-.5.6-2.3 2.4-2.6 2.7-.3.3-1.2 1-1.2 1l-.5.4-33.6 29.5 105.4 92.3zm-39.2-4.3h27.7L142 145.1l33.6-29.5h-3.1l4.7-3.8.1-2.6 1.8 2 1.4.1c.2-.1.3-.3.4-.4.4-.3 1.9-1.9 2.2-2.2 8.3-10 12.8-22.6 12.8-35.3 0-30.6-24.9-55.5-55.5-55.5H30.3l-18 18.5 108.4-.1h19.7c20.4 0 37 16.6 37 37 0 8.7-2.9 16.8-8.4 23.5-.7.9-3.5 3.4-8.5 7.5L148 115.1l-33.7 30L214.7 233z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      </div>
+     
+      <ul
+      class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]"
+    >
+      <li>
+        <a
+          href="https://www.linkedin.com/in/romeesa-kamal-7864b8342/"
+          target="_blank"
+        >
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:https:kamalromeesa@gmail.com" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/RomeesaKamal" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          >
+            <path
+              fill="currentColor"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    </footer>
+  </section>
+
+    <script src="./app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
