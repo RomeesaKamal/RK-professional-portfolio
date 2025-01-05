@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,21 +28,29 @@
         justify-content: center;
         align-items: center;
       }
-      .swiper-button-next,
-      .swiper-button-prev {
+      html.dark .swiper-button-next,
+      html.dark .swiper-button-prev {
         background: linear-gradient(45deg, #ff4545, #00ff99, #006aff, #ff0095);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      html.dark .swiper-pagination-bullet {
+        background: linear-gradient(45deg, #ff4545, #00ff99, #006aff, #ff0095);
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+       color: #0F044C;
+      }
 
       .swiper-pagination-bullet {
-        background: linear-gradient(45deg, #ff4545, #00ff99, #006aff, #ff0095);
+        background-color:#0F044C ;
       }
     </style>
   </head>
   <body
-    class="bg-[#1c1d25] text-white font-['Nunito'] overflow-y-scroll scrollbar"
+    class="dark:bg-[#1c1d25] dark:text-white bg-white text-[#17153B] text-font-['Nunito'] overflow-y-scroll scrollbar"
   >
   <!-- First Section -->
     <section class="flex flex-col justify-between h-screen">
@@ -57,7 +65,7 @@
           viewBox="0 0 256 256"
         >
           <path
-            fill="#FFF"
+            fill="currentColor"
             d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"
           ></path>
           <g fill="currentColor">
@@ -88,7 +96,8 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="feather feather-sun"
+            class="feather feather-sun z-[444444] cursor-pointer hover:fill-[#FFB200] hidden"
+            id='sun-icon'
           >
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -100,20 +109,17 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
+          <svg id="moon-icon" 
+          xmlns="http://www.w3.org/2000/svg"
+           width="24"
             height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="hidden"
-          >
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
+             viewBox="0 0 24 24" 
+             fill="none"
+              stroke="currentColor"
+               stroke-width="2" 
+               stroke-linecap="round"
+                stroke-linejoin="round" 
+                class="feather feather-moon cursor-pointer z-[444444] hover:fill-[#17153B]  hidden"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </div>
       </header>
       <div class="flex -mt-11 relative">
@@ -206,15 +212,107 @@
               </g>
             </g>
           </svg>
+          <!-- <svg
+  id="logo-anim"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  class="absolute top-0 left-1/2 -translate-y-[80px] sm:-translate-y-[180px] -translate-x-1/2 md:w-[558px] h-auto sm:w-[400px] w-[300px] opacity-50"
+>
+  <style>
+    .st0 {
+      clip-path: url(#XMLID_8_);
+      fill: none;
+      stroke: url(#lightModeGradient); /* Light Mode Gradient */
+      stroke-width: 70.344;
+      stroke-miterlimit: 10;
+    }
+    .st1 {
+      clip-path: url(#XMLID_11_);
+      fill: none;
+      stroke: url(#lightModeGradient); /* Light Mode Gradient */
+      stroke-width: 70.344;
+      stroke-miterlimit: 10;
+    }
+
+    .dark .st0,
+    .dark .st1 {
+      stroke: url(#darkModeGradient); /* Dark Mode Gradient */
+    }
+  </style>
+  <g id="XMLID_10_">
+    <defs>
+      <path
+        id="XMLID_4_"
+        d="M54.9 147.2l80-70h-33.5l-80 70L122 235.3h33.5L54.9 147.2z"
+        style="stroke-dasharray: 548, 550; stroke-dashoffset: 0"
+      ></path>
+    </defs>
+    <clipPath id="XMLID_8_">
+      <use xlink:href="#XMLID_4_" overflow="visible"></use>
+    </clipPath>
+    <linearGradient
+      id="lightModeGradient"
+      gradientUnits="userSpaceOnUse"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop offset="2" stop-color=""></stop>
+      <stop offset="1" stop-color="#021526"></stop>
+    </linearGradient>
+    <linearGradient
+      id="darkModeGradient"
+      gradientUnits="userSpaceOnUse"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop offset="0" stop-color="#021526"></stop>
+      <stop offset="1" stop-color="#17153B"></stop>
+    </linearGradient>
+    <path
+      id="XMLID_3_"
+      d="M154.6 249.8L37.8 147.2c8.3-8.3 91.4-81.4 91.4-81.4"
+      class="st0"
+      style="stroke-dasharray: 278, 280; stroke-dashoffset: 0"
+    ></path>
+  </g>
+  <g id="XMLID_6_">
+    <g id="XMLID_7_">
+      <defs>
+        <path
+          id="XMLID_2_"
+          d="M251.1 237.4h-40l-.5-.4-102.5-89.7 1.8-1.6 34.8-31 12.2-10.4c3.9-3.2 7.4-6.2 7.8-6.8 4.8-5.8 7.3-12.8 7.3-20.4 0-17.6-14.3-31.9-31.9-31.9H4.8l25.8-26.6 114.6-.1-.2.2c29.9 2.5 53.6 27.9 53.6 58.3 0 13.4-4.8 26.7-13.5 37.2-.5.6-2.3 2.3-2.6 2.6-.3.3-1.1 1-1.1 1l-.5.4L148 147l103.1 90.4z"
+          style="stroke-dasharray: 926, 928; stroke-dashoffset: 0"
+        ></path>
+      </defs>
+      <clipPath id="XMLID_11_">
+        <use xlink:href="#XMLID_2_" overflow="visible"></use>
+      </clipPath>
+      <path
+        id="XMLID_1_"
+        d="M-.5 29.8l126.8-.1c29.9 2.5 57.4 17 57.4 47.4 0 13.4-4.3 24.4-17.4 37.2-.5.6-2.3 2.3-2.6 2.6-.3.3-1.1 1-1.1 1l-.5.4-32.9 28.8 118.9 105.6"
+        class="st1"
+        style="stroke-dasharray: 461, 463; stroke-dashoffset: 0"
+      ></path>
+    </g>
+  </g>
+</svg> -->
+
           <div class="relative ml-8 md:ml-12">
             <h1 class="text-4xl md:text-[64px] font-['Spartan'] mr-12">
               Romeesa Kamal
             </h1>
-            <p class="font-[Merriweather] italic my-4 md:my-12">
+            <p class="font-[Merriweather] dark:font-normal font-bold italic my-4 md:my-12">
               Building the Frontend, Dreaming Full-Stack
             </p>
             <button
-              class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#EE5A24] to-[#EA2027] relative hover:scale-110 ease-in-out duration-100 group z-10 overflow-visible tracking-widest"
+              class="py-2 px-5 rounded font-extrabold dark:bg-gradient-to-l dark:from-[#EE5A24] dark:to-[#EA2027] bg-gradient-to-l from-[#432E54] to-[#530e4f]  text-white relative hover:scale-110 ease-in-out duration-100 group z-10 overflow-visible tracking-widest"
               id="about"
             >
               About Me
@@ -232,7 +330,7 @@
                 width="44"
                 height="44"
                 viewBox="0 0 100 100"
-                class="absolute top-1/2 -translate-y-1/2 -right-[26px] group-hover:-right-8 ease-in-out duration-100"
+                class="absolute top-1/2 -translate-y-1/2 -right-[26px] group-hover:-right-8 ease-in-out duration-100 text-[#17153B] dark:text-white"
               >
                 <g transform="translate(0,-952.36218)">
                   <path
@@ -240,13 +338,13 @@
                       text-indent: 0;
                       text-transform: none;
                       direction: ltr;
-                      color: #000000;
+                      color: currentColor;
                       enable-background: accumulate;
                     "
                     d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
-                    fill="#fff"
+                    fill="currentColor"
                     fill-opacity="1"
-                    stroke="white"
+                    stroke="currentColor"
                     stroke-width="2"
                     marker="none"
                     visibility="visible"
@@ -259,7 +357,7 @@
           </div>
         </div>
         <ul
-          class="ml-auto space-y-6 text-[#b0b2c3] absolute md:right-8 right-5 overflow-hidden z-10"
+          class="ml-auto space-y-6 dark:text-[#b0b2c3] absolute md:right-8 right-5 overflow-hidden z-10"
         >
           <li>
             <a
@@ -267,7 +365,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 hover:text-white"
+                class="w-8 dark:hover:text-white  hover:text-slate-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -281,7 +379,7 @@
           <li>
             <a href="https://web.facebook.com/profile.php?id=61568846560346" target="_blank">
               <svg 
-              class="w-8 hover:text-white"
+              class="w-8 dark:hover:text-white  hover:text-slate-600"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path 
                 fill="currentColor"
                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
@@ -290,7 +388,7 @@
           <li>
             <a href="https://www.instagram.com/romeesakamal2005/" target="_blank">
               <svg
-                class="w-8 hover:text-white"
+                class="w-8 dark:hover:text-white hover:text-slate-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -304,7 +402,7 @@
           <li>
             <a href="mailto:https:kamalromeesa@gmail.com" target="_blank">
               <svg
-                class="w-8 hover:text-white"
+                class="w-8 dark:hover:text-white hover:text-slate-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -318,7 +416,7 @@
           <li>
             <a href="https://github.com/RomeesaKamal" target="_blank">
               <svg
-                class="w-8 hover:text-white"
+                class="w-8 dark:hover:text-white hover:text-slate-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -337,19 +435,19 @@
       >
         <div class="fixed inset-0 flex z-[11111] items-center justify-center">
           <div
-            class="grid xl:grid-cols-[55%_35%] h-[89%] xl:w-[65%] xl:h-[78%] w-[70% h-[80%]] md:w-[80%] md:h-[50%] grid-cols-1 bg-[#19191d] bg-opacity-[190%] transition-all rounded-xl relative shadow-[0_5px_15px-#0e0e11] overflow-auto scrollbar-custom"
+            class="grid xl:grid-cols-[55%_35%] h-[89%] xl:w-[65%] xl:h-[78%] w-[70% h-[80%]] md:w-[80%] md:h-[50%] grid-cols-1 dark:bg-[#19191d] bg-[#EEEEEE] z-50 bg-opacity-[190%] transition-all rounded-xl relative shadow-[0_5px_15px-#0e0e11] overflow-auto scrollbar-custom"
           >
             <img
               src="./assets/icons/x.svg"
               alt="cross-icon"
-              class="absolute top-3 right-3 p-2 bg-[#25252b] rounded-full shadow-[0_0px_3px_4px_ #161619] hover:rotate-180 ease-in-out duration-100 z-[1234] overflow-visible"
+              class="absolute top-3 right-3 p-2 dark:bg-[#25252b] bg-[#D1D4C9] rounded-full shadow-[0_0px_3px_4px_ #161619] hover:rotate-180 ease-in-out duration-100 z-[1234] overflow-visible"
               id="close"
             />
             <div class="flex flex-col sm:pl-20 pl-3  pr-3 sm:pr-20 pt-5 mt-6">
-              <h2 class="font-['Spartan'] font-bold text-2xl text-[#257180]">
+              <h2 class="font-['Spartan']  dark:bold font-extrabold text-2xl dark:text-[#257180] text-[#062925]">
                 ABOUT ME
               </h2>
-              <p class="mt-6 text-lg font-['Nunito']">
+              <p class="mt-6 text-lg font-['Nunito'] dark:font-normal font-bold">
                 Hi there! I’m Rome 😊, an 18-year-old Pakistani with a passion
                 for weaving creativity into websites. Crafting unique and
                 captivating designs that draw users in is my true calling. As a
@@ -359,28 +457,28 @@
                 extraordinary and leave a lasting impression.
               </p>
               <div>
-                <h3 class="text-xl uppercase my-4 text-[#219B9D]">
+                <h3 class="text-xl uppercase my-4 dark:text-[#219B9D] text-[#044A42] dark:font-normal font-bold">
                   My Educational Background
                 </h3>
                 <div>
-                  <h4 class="text-[24px]">
+                  <h4 class="text-[24px] dark:font-normal font-bold">
                     🎓 Intermediate in Pre-Engineering
-                    <b class="text-[#557C56]">2024</b>
+                    <b class="dark:text-[#557C56] text-[#1B0044]">2024</b>
                   </h4>
                   <p
-                    class="font-[Merriweather] italic mt-2 text-[19px] text-[#FDA403]"
+                    class="font-[Merriweather] italic mt-2 text-[19px] text-[#FDA403] dark:font-normal font-bold"
                   >
                     The Peace College, Swabi
                   </p>
-                  <p class="text-lg font-['Nunito']">
+                  <p class="text-lg font-['Nunito'] dark:font-normal font-bold">
                     Achieved <b class="text-[#557C56]">89%</b>, demonstrating
                     strong aptitude in Mathematics, Physics, and Chemistry.
                   </p>
                 </div>
-                <h3 class="text-xl uppercase my-4 text-[#219B9D]">
+                <h3 class="text-xl uppercase my-4 dark:text-[#219B9D] text-[#7B113A] dark:font-normal font-bold">
                   Hobbies & Interests
                 </h3>
-                <div class="p-1">
+                <div class="p-1 dark:font-normal font-bold">
                   <li class="text-lg font-['Nunito']">
                     🎨
                     <b class="text-[#557C56] italic"
@@ -405,12 +503,12 @@
               </div>
               <div>
                 <h2
-                  class="text-xl font-['Franklin'] uppercase text-[#219B9D] mt-4"
+                  class="text-xl font-['Franklin'] uppercase dark:text-[#219B9D] text-[#7B113A] mt-4 dark:font-normal font-bold"
                 >
                   Transforming Ideas into Stunning, Responsive Digital
                   Experiences
                 </h2>
-                <li class="mt-5">
+                <li class="mt-5 dark:font-normal font-bold">
                   🚀 Starting my Web Development Journey on
                   <span class="text-[#557C56] italic">August 23, 2024</span>
                   Since then, I have learned and worked with the following
@@ -453,9 +551,10 @@
                     <img
                       src="./assets/images/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
                       alt="tailwind"
-                      class="relative z-10"
+                      class="relative z-10 text-[#000]"
+                      id="tailwind"
                     />
-                    <span>T</span>
+                    <span class="text-[#000]">T</span>
                   </div>
                   <div class="tooltip-icon react">
                     <img
@@ -463,7 +562,7 @@
                       alt="react"
                       class="relative z-10"
                     />
-                    <span>R</span>
+                    <span class="text-[#61dafb]">R</span>
                     <div class="tooltip"><span>React.js</span></div>
                   </div>
                   <div class="tooltip-icon java-scrpt">
@@ -508,7 +607,7 @@
         class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
       >
         <button
-          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#EE5A24] to-[#EA2027] relative hover:scale-110 ease-in-out duration-100 group mb-20 z-10  tracking-widest"
+          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold dark:bg-gradient-to-l text-white dark:from-[#EE5A24] dark:to-[#EA2027] bg-gradient-to-l from-[#432E54] to-[#530e4f] relative hover:scale-110 ease-in-out duration-100 group mb-20 z-10  tracking-widest"
         id="latest">
           Latest Works
           <svg
@@ -525,7 +624,7 @@
             width="44"
             height="44"
             viewBox="0 0 100 100"
-            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100 dark:text-white text-[#17153B]"
           >
             <g transform="translate(0,-952.36218)">
               <path
@@ -533,13 +632,13 @@
                   text-indent: 0;
                   text-transform: none;
                   direction: ltr;
-                  color: #000000;
+                  color: currentColor;
                   enable-background: accumulate;
                 "
                 d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
-                fill="#fff"
+                fill="currentColor"
                 fill-opacity="1"
-                stroke="white"
+                stroke="currentColor"
                 stroke-width="2"
                 marker="none"
                 visibility="visible"
@@ -551,7 +650,7 @@
         </button>
       </div>
       <div class="absolute w-full h-screen overflow-hidden">
-        <div class="bubbles absolute flex">
+        <div class="bubbles  absolute flex">
           <span style="--i: 11"></span>
           <span style="--i: 12"></span>
           <span style="--i: 24"></span>
@@ -630,19 +729,19 @@
  <!-- Latest Works -->
     <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16 hidden pt-[2px]">
       <h2
-        class="text-3xl sm:text-[40px] relative z-20 bg-[#1c1d25] mt-8 font-bold px-4 py-3 w-max mx-auto text-center text-[#5892bb] rounded-lg drop-shadow-[0_0px_10px_rgba(59,130,246,0.3)]"
+        class="text-3xl sm:text-[40px] relative z-20 dark:bg-[#1c1d25] mt-8 font-bold px-4 py-3 w-max mx-auto text-center dark:text-[#5892bb] rounded-lg dark:drop-shadow-[0_0px_10px_rgba(59,130,246,0.3)]  text-[#86003C] shadow-lg"
       >
         Latest Works
       </h2>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded hover:border-4 border-indigo-200 border-t-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded dark:hover:border-4 dark:border-indigo-200 dark:border-t-indigo-500 duration-100 hover:border-[6px] border-[#22092C] border-t-[#22092C] relative"
       >
         <div
-          class="h-1 left-1/4 right-1/2 bg-[#fc815c] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/4 right-1/2 dark:bg-[#fc815c] bg-[#331D2C] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#fc815c] border-[#331D2C] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
 
         <a
@@ -653,7 +752,7 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
           >
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#fc815c] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#fc815c] bg-[#331D2C] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 text-white"
               >Explore World Data
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -675,7 +774,7 @@
               </svg>
             </span>
             <img
-              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              class="max-w-[400px] w-full mr-auto relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3 "
               src="./assets/images/countries.png"
               alt="countries-app"
             />
@@ -683,8 +782,8 @@
         </a>
 
         <div class="w-full">
-          <h3 class="text-[#fc815c] font-bold text-4xl">Explore World Data</h3>
-          <span class="text-[#fc815c] text-lg"
+          <h3 class="dark:text-[#fc815c] text-[#331D2C] font-bold text-4xl">Explore World Data</h3>
+          <span class="dark:text-[#fc815c] text-[#331D2C]  text-lg"
             >(REST Countries API Integration)</span
           >
           <p class="text-justify mt-2 text-xl">
@@ -694,16 +793,16 @@
           </p>
 
           <ul class="flex flex-wrap gap-2 sm:mt-6 mt-4">
-            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#fc815c] px-[10px] py-[5px] dark:text-[#fc815c] text-[#331D2C] border-[#331d2c] dark:bg-[#1c1d25] bg-[#726A95]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#fc815c] px-[10px] py-[5px] dark:text-[#fc815c] text-[#331D2C] border-[#331d2c] dark:bg-[#1c1d25] bg-[#726A95]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#fc815c] px-[10px] py-[5px] dark:text-[#fc815c] text-[#331D2C] border-[#331d2c] dark:bg-[#1c1d25] bg-[#726A95]">
               JavaScript
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#fc815c] px-[10px] py-[5px] text-[#fc815c]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#fc815c] px-[10px] py-[5px] dark:text-[#fc815c] text-[#331D2C] border-[#331d2c] dark:bg-[#1c1d25] bg-[#726A95]">
               REST  API
             </li>
           </ul>
@@ -711,42 +810,42 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded hover:border-4 border-indigo-200 border-x-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 rounded dark:hover:border-4 dark:border-indigo-200 darkborder-x-indigo-500 duration-100 border-[#183D3D] border-x-[#183D3D] hover:border-[6px] relative"
       >
         <div class="w-full">
-          <h3 class="text-[#ffe578] font-bold text-4xl">Recipe Explorer</h3>
-          <span class="text-[#ffe578] text-lg">(Find Your Next Dish)</span>
+          <h3 class="dark:text-[#ffe578] text-[#183D3D] font-bold text-4xl">Recipe Explorer</h3>
+          <span class="dark:text-[#ffe578] text-[#183D3D] text-lg">(Find Your Next Dish)</span>
           <p class="text-justify mt-2 text-xl">
             This is my second API project, assigned by my mentor. I added
             creative features to make the website more enjoyable and
             user-friendly.
           </p>
           <ul class="flex flex-wrap gap-2 mt-4">
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               JavaScript
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               Figma
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               Canva
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#ffe578] px-[10px] py-[5px] text-[#ffe578]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#ffe578] px-[10px] py-[5px] dark:text-[#ffe578] text-[#183D3D] border-[#183D3d] dark:bg-[#1c1d25] bg-[#CBE4DE]">
               API Integration
             </li>
           </ul>
         </div>
         <div
-          class="h-1 left-1/2 right-1/4 bg-[#ffe578] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/2 right-1/4 dark:bg-[#ffe578] bg-[#183D3D] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#ffe578] border-[#183D3D] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
         <a
           href="https://romeesakamal.github.io/Recipe-website/"
@@ -756,12 +855,12 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
           >
             <img
-              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              class="max-w-[400px] w-full relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
               src="./assets/images/recipe.png"
               alt="recipe-website"
             />
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#ffe578] text-black sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#ffe578] dark:text-black text-white bg-[#183D3D] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
               >Recipe Explorer
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -787,13 +886,13 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-2 rounded hover:border-4 border-indigo-200 border-b-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center mt-10 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-2 rounded dark:hover:border-4 dark:border-indigo-200 dark:border-b-indigo-500 border-[#022C43] border-b-[#022C43] hover:boreder-[6px] duration-100 relative"
       >
         <div
-          class="h-1 left-1/4 right-1/2 bg-[#FF5553] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/4 right-1/2 dark:bg-[#FF5553] bg-[#022C43] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#FF5553] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#FF5553] border-[#022C43] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
 
         <a
@@ -804,7 +903,7 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
           >
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#FF5553] sm:absolute left-1/2 sm:-translate-x-2/3 top-5 px-4 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#FF5553] bg-[#022C43] text-white sm:absolute left-1/2 sm:-translate-x-2/3 top-5 px-4 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
               >Task-Trax-App
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -826,7 +925,7 @@
               </svg>
             </span>
             <img
-              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              class="max-w-[400px] w-full mr-auto relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
               src="./assets/images/to-do.png"
               alt="to-do-app"
             />
@@ -834,8 +933,8 @@
         </a>
 
         <div class="w-full">
-          <h3 class="text-[#FF5553] font-bold text-4xl">Task Trax</h3>
-          <span class="text-[#FF5553] text-lg">(Stay on Track Every Day)</span>
+          <h3 class="dark:text-[#FF5553] text-[#022C43] font-bold text-4xl">Task Trax</h3>
+          <span class="dark:text-[#FF5553] text-[#022C43] text-lg">(Stay on Track Every Day)</span>
           <p class="text-justify mt-2 text-xl">
             I created a to-do app called Task Trax to simplify task management.
             It includes features like adding, editing, and deleting tasks, with
@@ -845,13 +944,13 @@
           </p>
 
           <ul class="flex flex-wrap gap-2 mt-6">
-            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#FF5553] border-[#022C43] px-[10px] py-[5px] dark:text-[#FF5553] text-[#022C43] dark:bg-[#1c1d25] bg-[#A0C1B8]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#FF5553] border-[#022C43] px-[10px] py-[5px] dark:text-[#FF5553] text-[#022C43] dark:bg-[#1c1d25] bg-[#A0C1B8]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#FF5553] px-[10px] py-[5px] text-[#FF5553]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#FF5553] border-[#022C43] px-[10px] py-[5px] dark:text-[#FF5553] text-[#022C43] dark:bg-[#1c1d25] bg-[#A0C1B8]">
               JavaScript
             </li>
           </ul>
@@ -859,11 +958,11 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center  shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded hover:border-4 border-indigo-200 border-l-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center  shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded dark:hover:border-4 dark:border-indigo-200 dark:border-l-indigo-500 duration-100 hover:border-[6px] border-[#2D2424] border-l-[#2D2424] relative"
       >
         <div class="w-full">
-          <h3 class="text-[#47AFA1] font-bold text-4xl">Mortgage Calculator</h3>
-          <span class="text-[#47AFA1] text-lg"
+          <h3 class="dark:text-[#47AFA1] text-[#2D2424] font-bold text-4xl">Mortgage Calculator</h3>
+          <span class="dark:text-[#47AFA1] text-[#2D2424]  text-lg"
             >(Accurate Loan Payment Estimator)</span
           >
           <p class="text-justify mt-2 text-xl">
@@ -872,22 +971,22 @@
             development through building a functional mortgage calculator.
           </p>
           <ul class="flex flex-wrap gap-2 mt-4">
-            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#47AFA1] border-[#2D2424] px-[10px] py-[5px] dark:text-[#47AFA1] text-[#2D2424] dark:bg-[#1c1d25] bg-[#b89b8d]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#47AFA1] border-[#2D2424] px-[10px] py-[5px] dark:text-[#47AFA1] text-[#2D2424] dark:bg-[#1c1d25] bg-[#b89b8d]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#47AFA1] px-[10px] py-[5px] text-[#47AFA1]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#47AFA1] border-[#2D2424] px-[10px] py-[5px] dark:text-[#47AFA1] text-[#2D2424] dark:bg-[#1c1d25] bg-[#b89b8d]">
               JavaScript
             </li>
           </ul>
         </div>
         <div
-          class="h-1 left-1/2 right-1/4 bg-[#47AFA1] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/2 right-1/4 dark:bg-[#47AFA1] bg-[#2D2424] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#47AFA1] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#47AFA1] border-[#2D2424] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
         <a
           href="https://romeesakamal.github.io/mortgage-repayment-calculator/"
@@ -897,12 +996,12 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
           >
             <img
-              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              class="max-w-[400px] w-full relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
               src="./assets/images/mortgage.png"
               alt="mortgage calculator"
             />
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#47AFA1] text-black sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#47AFA1] bg-[#2D2424] dark:text-black text-white sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
               >Mortgage Calculator
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -928,13 +1027,13 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded hover:border-4 border-indigo-200 border-y-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-4 mt-10 rounded dark:hover:border-4 dark:border-indigo-200 dark:border-y-indigo-500 duration-100 relative  border-[#7D0633] border-y-[#7D0633] border-[6px]"
       >
         <div
-          class="h-1 left-1/4 right-1/2 bg-[#E4B1F0] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/4 right-1/2 dark:bg-[#E4B1F0] bg-[#7D0633] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#E4B1F0] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#E4B1F0] border-[#7D0633] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
 
         <a
@@ -945,7 +1044,7 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
           >
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#E4B1F0] sm:absolute left-[55%] sm:-translate-x-2/3 top-5 px-3 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 text-black"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#E4B1F0] bg-[#7D0633] text-white sm:absolute left-[55%] sm:-translate-x-2/3 top-5 px-3 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 dark:text-black"
               >Rocked, Scissored, and Papered
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -967,7 +1066,7 @@
               </svg>
             </span>
             <img
-              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
+              class="max-w-[400px] w-full mr-auto relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] opacity-100 mt-3"
               src="./assets/images/rock-game.png"
               alt="rock-game"
             />
@@ -975,10 +1074,10 @@
         </a>
 
         <div class="w-full">
-          <h3 class="text-[#E4B1F0] font-bold text-4xl">
+          <h3 class="dark:text-[#E4B1F0] text-[#7D0633] font-bold text-4xl">
             Rocked, Scissored, and Papered
           </h3>
-          <span class="text-[#E4B1F0] text-lg"
+          <span class="dark:text-[#E4B1F0] text-[#7D0633] text-lg"
             >(Classic Hand Game with Logic)</span
           >
           <p class="text-justify mt-2 text-xl">
@@ -989,13 +1088,13 @@
           </p>
 
           <ul class="flex flex-wrap gap-2 mt-6">
-            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#E4B1F0] border-[#7D0633] bg-[#c44545] px-[10px] py-[5px] dark:bg-[#1c1d25] dark:text-[#E4B1F0] text-[#7D0633]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#E4B1F0] border-[#7D0633] bg-[#c44545] px-[10px] py-[5px] dark:bg-[#1c1d25] dark:text-[#E4B1F0] text-[#7D0633]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#E4B1F0] px-[10px] py-[5px] text-[#E4B1F0]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#E4B1F0] border-[#7D0633] bg-[#c44545] px-[10px] py-[5px] dark:bg-[#1c1d25] dark:text-[#E4B1F0] text-[#7D0633]">
               JavaScript
             </li>
           </ul>
@@ -1003,11 +1102,11 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-3 mt-10 rounded hover:border-4 border-indigo-200 border-x-indigo-500 duration-100 relative"
+        class="flex flex-col md:flex-row gap-4 md:mt-16 md:gap-[80px] items-center sm:mt-12 shadow-lg hover:shadow-2xl transition-shadow sm:p-24 p-3 mt-10 rounded dark:hover:border-4 dark:border-indigo-200 dark:border-x-indigo-500 hover:border-[6px] border-[#52057B] border-x-[#52057B] duration-100 relative"
       >
         <div class="w-full">
-          <h3 class="text-[#3E7B27] font-bold text-4xl">SecurePass Creator</h3>
-          <span class="text-[#3E7B27] text-lg"
+          <h3 class="dark:text-[#3E7B27] text-[#52057B] font-bold text-4xl">SecurePass Creator</h3>
+          <span class="dark:text-[#3E7B27] text-[#52057B] text-lg"
             >(Generate Strong and Secure Passwords)</span
           >
           <p class="text-justify mt-2 text-xl">
@@ -1018,26 +1117,26 @@
             and user experience.
           </p>
           <ul class="flex flex-wrap gap-2 mt-4">
-            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#3E7B27] border-[#52057B] px-[10px] py-[5px] dark:text-[#3E7B27] text-[#52057B] dark:bg-[#1c1d25] bg-[#c885f5]">
               HTML
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#3E7B27] border-[#52057B] px-[10px] py-[5px] dark:text-[#3E7B27] text-[#52057B] dark:bg-[#1c1d25] bg-[#c885f5]">
               CSS
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#3E7B27] border-[#52057B] px-[10px] py-[5px] dark:text-[#3E7B27] text-[#52057B] dark:bg-[#1c1d25] bg-[#c885f5]">
               JavaScript
             </li>
-            <li class="border-4 font-bold rounded-[50px] border-[#3E7B27] px-[10px] py-[5px] text-[#3E7B27]">
+            <li class="border-4 font-bold rounded-[50px] dark:border-[#3E7B27] border-[#52057B] px-[10px] py-[5px] dark:text-[#3E7B27] text-[#52057B] dark:bg-[#1c1d25] bg-[#c885f5]">
               Figma
             </li>
           </ul>
         </div>
 
         <div
-          class="h-1 left-1/2 right-1/4 bg-[#3E7B27] absolute top-1/2 hidden md:block"
+          class="h-1 left-1/2 right-1/4 dark:bg-[#3E7B27] bg-[#52057B] absolute top-1/2 hidden md:block"
         ></div>
         <div
-          class="w-5 h-5 rounded-full border-[3px] border-[#3E7B27] absolute left-1/2 -translate-x-1/2 bg-[#1c1d25] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
+          class="w-5 h-5 rounded-full border-[3px] dark:border-[#3E7B27] border-[#52057B] absolute left-1/2 -translate-x-1/2 dark:bg-[#1c1d25] bg-[#FAF0E6] z-10 hover:scale-110 ease-in-out duration-110 hidden md:block"
         ></div>
         <a
           href="https://romeesakamal.github.io/Password-Generator-/"
@@ -1047,12 +1146,12 @@
             class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 ml-auto"
           >
             <img
-              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              class="max-w-[400px] w-full relative z-10 dark:drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
               src="./assets/images/passward.png"
               alt="passward-generator"
             />
             <span
-              class="flex group-hover:-top-16 ease-jump duration-200 bg-[#3E7B27] sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              class="flex group-hover:-top-16 ease-jump duration-200 dark:bg-[#3E7B27] bg-[#52057B] text-white sm:absolute left-[60%] sm:-translate-x-2/3 top-5 px-3 py-2 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
               >SecurePass Creator
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1078,13 +1177,13 @@
       </div>
 
       <div
-        class="absolute top-[36px] bottom-0 left-1/2 -translate-x-1/2 w-[4px] bg-[#1788ae] md:block hidden"
+        class="absolute dark:top-[36px] top-[95px] bottom-0 left-1/2 -translate-x-1/2 w-[4px] dark:bg-[#1788ae] bg-[#86003C] md:block hidden"
       ></div>
     </section>
     <!-- About Cards -->
     <section class="max-w-screen-xl mx-auto px-4 pb-14 hidden">
       <h2
-        class="text-2xl sm:text-3xl bg-[#1c1d25] sm:w-max relative font-bold px-4 py-2 mx-auto text-center text-[#FF6500] rounded-md card"
+        class="text-2xl sm:text-3xl dark:bg-[#1c1d25] shadow-lg bg-white sm:w-max relative font-bold px-4 py-2 mx-auto text-center dark:text-[#FF6500] text-[#86003C] rounded-md  card"
       >
         Let’s Build Something Great Together
       </h2>
@@ -1093,20 +1192,17 @@
         <div class="swiper-wrapper items-center">
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card card-white relative"
             >
               <img
                 src="./assets/images/dedication.webp"
                 alt="dedication"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#F8D71A] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="dark:text-[#F8D71A] text-[#720455] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Dedication to Excellence
                 </h2>
@@ -1119,20 +1215,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/personalize.webp"
                 alt="personalize"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#A0153E] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#A0153E] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Personalized Solutions
                 </h2>
@@ -1145,20 +1238,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/collobrative.png"
                 alt="personalize"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+                
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#FF6500] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#FF6500] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Collaborative Spirit
                 </h2>
@@ -1171,20 +1261,18 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/attention.webp"
                 alt="attention"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow
                 "
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#C62300] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#C62300] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Attention to Detail
                 </h2>
@@ -1197,20 +1285,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/communication.webp"
                 alt="communication"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+              
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#ED8D8D] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="dark:text-[#ED8D8D] text-[#413C69] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Transparent Communication
                 </h2>
@@ -1223,20 +1308,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/learning.png"
                 alt="learning"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#DA0037] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#DA0037] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Continuous Learning
                 </h2>
@@ -1249,20 +1331,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/creativity.jpeg"
                 alt="Creativity"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+                
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#D89216] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#D89216] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Passion for Creativity
                 </h2>
@@ -1275,20 +1354,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/solving.jpeg"
                 alt="Problem-Solving"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+                
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#FF1E56] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="text-[#FF1E56] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Problem-Solving Mindset
                 </h2>
@@ -1301,20 +1377,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-10 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25]  bg-white p-10 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/flexabilty.jpg"
                 alt="flexabilty"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] rounded-full dark:shadow-custom-glow"
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#4ECCA3] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="dark:text-[#4ECCA3] text-[#1B4242] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Adaptability and Flexibility
                 </h2>
@@ -1327,20 +1400,17 @@
           </div>
           <div class="swiper-slide relative px-5">
             <div
-              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center bg-[#1c1d25] p-12 mb-3 mt-3 shadow-2xl rounded-lg card relative"
+              class="flex flex-col md:flex-row md:max-w-[800px] !w-full items-center dark:bg-[#1c1d25] bg-white p-12 mb-3 mt-3 shadow-2xl rounded-lg card relative"
             >
               <img
                 src="./assets/images/time.webp"
                 alt="time"
-                class="shrink-0 w-[120px] h-[120px] rounded-full"
-                style="
-                  box-shadow: 0 0 0 3px rgba(15, 4, 180, 0.26), 0 0 10px #006bff,
-                    0 0 50px #006bff;
-                "
+                class="shrink-0 w-[120px] h-[120px] dark:shadow-custom-glow rounded-full"
+               
               />
               <div class="ml-8 text-left">
                 <h2
-                  class="text-[#C6DE41] text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
+                  class="dark:text-[#C6DE41] text-[#481E14] font-bold text-2xl md:text-3xl md:text-center mt-4 mb-6 md:mb-8 font-['Popins']"
                 >
                   Timely Delivery
                 </h2>
@@ -1360,7 +1430,7 @@
 <!-- Contact Form -->
     <section class="max-w-screen-xl mx-auto px-4 pb-14 hidden">
       <h2
-        class="text-2xl sm:text-3xl bg-[#1c1d25] sm:w-max relative font-bold px-4 py-2  mx-auto text-center text-[#FF6500]   rounded-md card"
+        class="text-2xl sm:text-3xl dark:bg-[#1c1d25] bg-white shadow-lg sm:w-max relative font-bold px-4 py-2  mx-auto text-center dark:text-[#FF6500]  text-[#86003C] rounded-md card"
       >
         Excited to explore opportunities together.
       </h2>
@@ -1439,7 +1509,7 @@
     <!-- Footer -->
      <section class=" hidden">
     <footer class="flex flex-col items-center pb-10">
-      <p class="text-xs text-gray-300">Romeesa Kamal © 2025</p>
+      <p class="text-xs dark:text-gray-300 text-gray-700">Romeesa Kamal © 2025</p>
       <div class="black-logo my-4">
        
         <svg
@@ -1447,11 +1517,11 @@
         id="my-svg"
         width="50"
         height="50"
-        class ="logo"
+        class ="logo  hover:text-slate-600"
         viewBox="0 0 256 256"
       >
         <path
-          fill="#FFF"
+          fill="currentColor"
           d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"
         ></path>
         <g fill="currentColor">
@@ -1474,7 +1544,7 @@
       </div>
      
       <ul
-      class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]"
+      class="mx-auto flex items-center justify-center gap-6 dark:text-[#b0b2c3] text-[#17153B]"
     >
       <li>
         <a
@@ -1482,7 +1552,7 @@
           target="_blank"
         >
           <svg
-            class="w-5 hover:text-white"
+            class="w-5 dark:hover:text-white  hover:text-slate-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -1496,7 +1566,7 @@
       <li>
         <a href="https://web.facebook.com/profile.php?id=61568846560346" target="_blank">
           <svg 
-          class="w-5 hover:text-white"
+          class="w-5 dark:hover:text-white  hover:text-slate-600"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path 
             fill="currentColor"
              d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
@@ -1505,7 +1575,7 @@
       <li>
         <a href="https://www.instagram.com/romeesakamal2005/" target="_blank">
           <svg
-            class="w-5 hover:text-white"
+            class="w-5 dark:hover:text-white  hover:text-slate-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -1519,7 +1589,7 @@
       <li>
         <a href="mailto:https:kamalromeesa@gmail.com" target="_blank">
           <svg
-            class="w-5 hover:text-white"
+            class="w-5 dark:hover:text-white  hover:text-slate-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
@@ -1533,7 +1603,7 @@
       <li>
         <a href="https://github.com/RomeesaKamal" target="_blank">
           <svg
-            class="w-5 hover:text-white"
+            class="w-5 dark:hover:text-white  hover:text-slate-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           >

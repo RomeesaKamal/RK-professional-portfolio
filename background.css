@@ -1,4 +1,4 @@
-.bubbles span {
+html.dark .bubbles span {
   position: relative;
   width: 30px;
   height: 30px;
@@ -10,27 +10,27 @@
   animation-duration: calc(125s / var(--i));
 }
 
-.bubbles span:nth-child(3n) {
+html.dark .bubbles span:nth-child(3n) {
   background-color: #4fc3dc;
   box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
 }
 
-.bubbles span:nth-child(3n + 1) {
+html.dark html.dark .bubbles span:nth-child(3n + 1) {
   background-color: #ff2d75;
   box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
 }
 
-.bubbles span:nth-child(3n + 2) {
+html.dark .bubbles span:nth-child(3n + 2) {
   background-color: #f5d108;
   box-shadow: 0 0 0 10px #f5d10844, 0 0 50px #f5d108, 0 0 100px #f5d108;
 }
 
-.bubbles span:nth-child(2n + 3) {
+html.dark.bubbles span:nth-child(2n + 3) {
   background-color: #ff6500;
   box-shadow: 0 0 0 10px #ff650044, 0 0 50px #ff6500, 0 0 100px #ff6500;
 }
 
-.bubbles span:nth-child(4n-1) {
+html.dark .bubbles span:nth-child(4n-1) {
   background-color: #f93827;
   box-shadow: 0 0 0 10px #f9382744, 0 0 50px #f93827, 0 0 100px #f93827;
 }
@@ -68,12 +68,15 @@
 }
 
 .react {
-  color: #61dafb;
+  color: black;
 }
 
-.tooltip {
+.tailwind{
+  color: #fff;
+}
+
+.tooltip{
   font-size: 14px;
-  color: black;
   position: absolute;
   top: 16px;
   border-radius: 24px;
@@ -83,6 +86,7 @@
   transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
     opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 
 .tooltip-icon:hover .tooltip {
   top: -48px;
@@ -116,8 +120,9 @@
 }
 
 .tailwind .tooltip {
-  background-color: white;
+  background-color: black;
 }
+
 
 .react .tooltip {
   background-color: #61dafb;
@@ -133,12 +138,7 @@
   color: #000;
 }
 
-/* whatsapp */
 
-.whatsapp .tooltip {
-  background-color: #fff;
-  color: rgb(10, 10, 10);
-}
 /* Custom scrollbar styling */
 
 .scrollbar-custom {
@@ -173,8 +173,8 @@
   background-color: #1c1d25;
 }
 
-.card::after,
-.card::before {
+html.dark .card::after,
+html.dark .card::before {
   content: "";
   position: absolute;
   height: 102%;
@@ -196,10 +196,11 @@
   border-radius: 8px;
 }
 
-.card::before {
+html.dark.card::before {
   filter: blur(0.35rem);
   opacity: 0.5;
 }
+
 
 @property --angle {
   syntax: "<angle>";
@@ -215,4 +216,3 @@
     --angle: 360deg;
   }
 }
-

@@ -39,9 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
-
 document.querySelector('.logo').addEventListener('click', () => {
   const sections = document.querySelectorAll('section'); // Select all <section> elements
   if (sections.length > 0) {
@@ -50,5 +47,48 @@ document.querySelector('.logo').addEventListener('click', () => {
     console.error('No sections found on the page.');
   }
 });
+
+const html = document.documentElement;
+const sunIcon = document.getElementById("sun-icon");
+const moonIcon = document.getElementById("moon-icon");
+
+// Ensure the site starts in dark mode by default
+html.classList.add("dark");
+sunIcon.classList.add("block");
+sunIcon.classList.remove("hidden");
+moonIcon.classList.add("hidden");
+moonIcon.classList.remove("block");
+
+function toggleTheme(mode) {
+  if (mode === "light") {
+    // Switch to light mode
+    html.classList.remove("dark");
+    sunIcon.classList.add("hidden");
+    sunIcon.classList.remove("block");
+    moonIcon.classList.add("block");
+    moonIcon.classList.remove("hidden");
+  } else if (mode === "dark") {
+    // Switch to dark mode
+    html.classList.add("dark");
+    moonIcon.classList.add("hidden");
+    moonIcon.classList.remove("block");
+    sunIcon.classList.add("block");
+    sunIcon.classList.remove("hidden");
+  }
+}
+
+// Add event listeners to both icons
+sunIcon.addEventListener("click", () => {
+  toggleTheme("light"); // Switch to light mode when sun icon is clicked
+});
+
+moonIcon.addEventListener("click", () => {
+  toggleTheme("dark"); // Switch to dark mode when moon icon is clicked
+
+});
+
+
+
+
 
 
