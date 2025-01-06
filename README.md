@@ -5,6 +5,7 @@ Welcome to my portfolio! This repository showcases the projects I've worked on a
 ## Screenshots
 
 ![Design preview for the Portfolio](./assets/images/white-mode.png)
+
 ![Design preview for the Portfolio](./assets/images/black-mode.png)
 
 ## Features
@@ -17,11 +18,36 @@ Welcome to my portfolio! This repository showcases the projects I've worked on a
 
 ## Technologies Used
 
-- **Frontend:** JavaScript, Tailwind CSS
+### **Frontend**
 
-- **Build Tools:** Vite
+- **HTML**: For structuring the web pages.
 
-- **Hosting:** GitHub Pages
+- **CSS**: For basic styling.
+
+- **Tailwind CSS**: Utility-first CSS framework for fast styling.
+
+- **JavaScript**: Adding interactivity and functionality.
+
+- **Particles.js**: For creating particle animations.
+
+
+### **Version Control & Deployment**
+
+- **Git**: For version control.
+
+- **GitHub**: For hosting code.
+
+- **Vercel**: For deploying the portfolio.
+
+- **Netlify**: For deploying the portfolio.
+
+### **Design & Other Tools**
+
+- **Figma**: For UI/UX design.
+
+- **Font Awesome**: For adding icons.
+
+- **Google Fonts**: For typography.
 
 ## How to Run Locally
 

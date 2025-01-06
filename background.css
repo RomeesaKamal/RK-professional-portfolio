@@ -44,6 +44,8 @@ html.dark .bubbles span:nth-child(4n-1) {
   }
 }
 
+/* Tooltips Styling */
+
 .tooltip-container {
   border-radius: 19px;
   display: flex;
@@ -197,7 +199,6 @@ html.dark.card::before {
   filter: blur(0.45rem);
   opacity: 0.5;
 }
-
 
 
 @property --angle {
