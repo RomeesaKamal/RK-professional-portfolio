@@ -71,11 +71,11 @@ html.dark .bubbles span:nth-child(4n-1) {
   color: black;
 }
 
-.tailwind{
+.tailwind {
   color: #fff;
 }
 
-.tooltip{
+.tooltip {
   font-size: 14px;
   position: absolute;
   top: 16px;
@@ -86,7 +86,6 @@ html.dark .bubbles span:nth-child(4n-1) {
   transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
     opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 
 .tooltip-icon:hover .tooltip {
   top: -48px;
@@ -123,7 +122,6 @@ html.dark .bubbles span:nth-child(4n-1) {
   background-color: black;
 }
 
-
 .react .tooltip {
   background-color: #61dafb;
 }
@@ -137,7 +135,6 @@ html.dark .bubbles span:nth-child(4n-1) {
   background-color: #ffc700;
   color: #000;
 }
-
 
 /* Custom scrollbar styling */
 
@@ -197,9 +194,10 @@ html.dark .card::before {
 }
 
 html.dark.card::before {
-  filter: blur(0.35rem);
+  filter: blur(0.45rem);
   opacity: 0.5;
 }
+
 
 
 @property --angle {
