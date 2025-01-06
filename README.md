@@ -1,11 +1,11 @@
 # My Web Development Portfolio
 
-## Screenshot
-
-![Design preview for the Portfolio](./assets/images/all-devices-white%20(6).png)
-
-
 Welcome to my portfolio! This repository showcases the projects I've worked on as I develop my skills as a web developer. It features a range of applications and designs, highlighting my ability to work with modern technologies and frameworks.
+
+## Screenshots
+
+![Design preview for the Portfolio](./assets/images/white-mode.png)
+![Design preview for the Portfolio](./assets/images/black-mode.png)
 
 ## Features
 
