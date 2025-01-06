@@ -1828,6 +1828,18 @@ video {
   fill: #FFB200;
 }
 
+.hover\:fill-\[\#\]:hover {
+  fill: #;
+}
+
+.hover\:fill-\[\]:hover {
+  fill: ;
+}
+
+.hover\:fill-\[\#fff\]:hover {
+  fill: #fff;
+}
+
 .hover\:text-slate-600:hover {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity, 1));
