@@ -1,10 +1,13 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  },
+  "tailwindcss": "^3.x.x",
+  "postcss": "^8.x.x",
+  "autoprefixer": "^10.x.x"
+}
+,
   "dependencies": {
     "tailwind-scrollbar": "^3.1.0"
   }
+  
 }
-
 
