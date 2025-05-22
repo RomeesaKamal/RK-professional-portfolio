@@ -65,6 +65,7 @@ html.dark .bubbles span:nth-child(4n-1) {
   position: relative;
 }
 
+
 .html {
   color: #47a248;
 }
@@ -74,7 +75,7 @@ html.dark .bubbles span:nth-child(4n-1) {
 }
 
 .tailwind {
-  color: #fff;
+  color: #aa0d3c;
 }
 
 .tooltip {
@@ -121,7 +122,8 @@ html.dark .bubbles span:nth-child(4n-1) {
 }
 
 .tailwind .tooltip {
-  background-color: black;
+  background-color: #aa0d3c;
+  color: #fff;
 }
 
 .react .tooltip {
